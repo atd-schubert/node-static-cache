@@ -14,7 +14,8 @@
     "cache",
     "serve-static",
     "express-middleware",
-    "connect-middleware"
+    "connect-middleware",
+    "middleware"
   ],
   "author": "Arne Schubert <atd.schubert@gmail.com>",
   "license": "ISC",
