@@ -32,22 +32,22 @@ var cache = new Cache({path: __dirname+"/_cache"});
 cache.cache("/path/to/file.txt",                    //the absolute path in cache not in the filesystem!
   "This is the content of the cached file",
   function(err){
-    if(err) return console.log("The following error occured:", err);
+    if(err) return console.log("The following error occurred:", err);
     cache.get("/path/to/file.txt", function(err, data){
-      if(err) return console.log("The following error occured:", err);
+      if(err) return console.log("The following error occurred:", err);
       console.log("The cached data is: ", data.toString());
       cache.clean("/path/to/file.txt", function(err){
-        if(err) return console.log("The following error occured:", err);
+        if(err) return console.log("The following error occurred:", err);
         console.log("'/path/to/file.txt' is deleted");
       });
     });
   });
   
 cache.cache("/just/10/seconds.txt", "this file only exists for 10 seconds because of the ttl option", function(err){
-  if(err) return console.log("The following error occured:", err);
+  if(err) return console.log("The following error occurred:", err);
   cache.ttl("/just/10/seconds.txt", 1000*10);
   cache.get("/just/10/seconds.txt", function(err, data){
-    if(err) return console.log("The following error occured:", err);
+    if(err) return console.log("The following error occurred:", err);
     console.log("The cached data is currently available: ", data.toString());
   });
   
