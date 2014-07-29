@@ -1,0 +1,25 @@
+{
+  "name": "static-cache",
+  "version": "0.0.0",
+  "description": "A caching module that uses serve-static and a caching folder, with cache and uncache functions and ttl option",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atd-schubert/node-static-cache.git"
+  },
+  "keywords": [
+    "cache",
+    "serve-static",
+    "express-middleware",
+    "connect-middleware"
+  ],
+  "author": "Arne Schubert <atd.schubert@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atd-schubert/node-static-cache/issues"
+  },
+  "homepage": "https://github.com/atd-schubert/node-static-cache"
+}
